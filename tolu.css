@@ -441,12 +441,32 @@ body {
   will-change: transform;
 }
 
-/* Grid Spanning and Offset Trickery */
-.floating-item:nth-child(1) { grid-column: span 7; }
-.floating-item:nth-child(2) { grid-column: span 5; }
-.floating-item:nth-child(3) { grid-column: span 5; }
-.floating-item:nth-child(4) { grid-column: span 7; }
-.floating-item:nth-child(5) { grid-column: span 6; margin-top: -3rem; }
+.floating-item:nth-child(1){
+    grid-column: span 7;
+}
+
+.floating-item:nth-child(2){
+    grid-column: span 5;
+    margin-top:4rem;
+}
+
+.floating-item:nth-child(3){
+    grid-column: span 5;
+}
+
+.floating-item:nth-child(4){
+    grid-column: span 7;
+}
+
+.floating-item:nth-child(5){
+    grid-column: span 6;
+    margin-top:2rem;
+}
+
+.floating-item:nth-child(6){
+    grid-column: span 6;
+    margin-top:2rem;
+}
 
 /* Staggered Vertical Offsets for Asymmetry */
 .offset-down {
@@ -807,13 +827,7 @@ body {
 
 
 
-.center-item{
-    grid-column:4 / span 6;
-    justify-self:center;
-    max-width:480px;
-    width:100%;
-    transform:none !important;
-}
+
 
 /* ==========================
    SHOWCASE
@@ -858,4 +872,15 @@ body {
     max-width:480px;
     width:100%;
     transform:none !important;
+}
+
+.portfolio-copy{
+    max-width:650px;
+}
+
+.portfolio-intro{
+    margin-top:1.2rem;
+    color:var(--text-muted);
+    font-size:1rem;
+    line-height:1.9;
 }
